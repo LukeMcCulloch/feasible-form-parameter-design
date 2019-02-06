@@ -3,6 +3,7 @@
 Relational Lsplines:  Relational logic programming and form parameter design
 
 Copyright 2019 Thomas Luke McCulloch
+
 All rights reserved
 
 ### What is this repository for? ###
