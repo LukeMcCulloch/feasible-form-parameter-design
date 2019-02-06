@@ -1,0 +1,71 @@
+
+
+
+\begin{small}
+	\begin{table}
+		\makebox[1 \textwidth][c]{ 
+		\begin{tabular}{llrrr}
+			\toprule
+			\rowcolor[HTML]{C0C0C0} 
+			\multicolumn{5}{l}{\textbf{Ship Hull Design Random Form parameters}}\\
+			%\midrule
+			\rowcolor[HTML]{C0C0C0} 
+			&  &   Target  & Actual & \% $\Delta$  \\
+			\rowcolor[HTML]{C0C0C0} 
+			Symbol & {Form Parameter} &  Value $\left(1\right)$ & Value $\left(2\right)$ & $\%error $ \ref{eq:PercentageError}   \\
+			\midrule
+			%
+			%---------------------------------------------------------------------
+			%
+			%  Bare Hull Form Parameters 
+			%  #utter zeros are on account of falling within the interval of acceptability
+			%
+			$\volDisp$  & Area of SAC curve, (Volume of Ship)		& ia(31381.385,31381.39)	& 31381.387		&   0.0	        \\
+			$\lwl$  	& Waterline Length  						& ia(117.833,117.839) & 117.836 	&   0.0           \\
+			$\beam$  	& Ship Beam 								& ia(28.013,28.016)	& 28.014 	&   0.0           \\
+			$\draft$  	& Ship Draft  								& ia(15.066,15.067)	& 15.067 	&   0.0           \\
+			$\am$  		& Midship Section Area  					& ia(379.864,379.87)	& 379.867 	&   0.0           \\
+			$\acp$  	& Center-plane Area  						& ia(1532.488,1532.494)	& 1532.491 	&   0.0           \\
+			$\awp$  	& Waterline Area  							& ia(3231.36,3231.366)	& 3231.363 	&   0.0           \\
+			$\lcb$  	& Longitudinal Center of Buoyancy			& ia(56.753,56.759)	& 56.756 	&   0.0           \\
+			$\cb$  		& Block Coefficient 						& ia(0.631,0.631) & 0.631 	&   -0.0           \\
+			$\cp$  		& Prismatic Coefficient  					& ia(0.701,0.701) & 0.701 	&   0.005           \\
+			$\cmdshp$ 	& Midship Area coefficient  				& ia(0.9,0.9) & 0.9 	&   -0.005           \\
+			$\CWL$  	& Waterline area coefficient 				& ia(0.979,0.979) & 0.979 	&   -0.0           \\
+			$\lenFWL$  	& Length of Flat of Waterline  				& ia(30.516,30.522)	& 30.519 	&   -0.0           \\
+			$\CPK$  	& Center-plane Keel Profile area coefficient& ia(0.863,0.863) & 0.863 	&   -0.0        	\\
+			$\lenFCPK$  & Length of the Center-plane Keel Profile 	& ia(13.927,13.933) & 13.93 	&   0.0        	\\
+			$\lenFCPK$  & Area of the Center-plane Keel Profile 	& ia(13.927,13.933) & 13.93 	&   0.0       	\\
+			$\lfsac$  	& Length of Flat of SAC  					& ia(13.483,13.489)	& 13.486 	&   -0.0           \\
+			$\dlr$  	& Displacement to Length Ratio 				& ia(0.019,0.019) & 0.019 	&   -0.0           \\
+			%
+			%---------------------------------------------------------------------
+			%
+			%  Bulbous Bow Form Parameters
+			%
+			%  notes:  
+			%     \Cabl = Lateral parameter, \ccpbulb = Centerplane Bulb Coefficient
+			%  #utter zeros are on account of falling within the interval of acceptability
+			%
+			$\volDispbulb$  & Area of Bulbous Bow 				& ia(65.756,65.756) & 65.756 	&   0.0           \\
+			$\cbulbmdshp$  	& bulb sectional area maximum 		& ia(0.491,0.491) & 0.491 	&   -0.0           \\
+			$\cwpbulb$  	& Water-plane Bulb Coefficient  	& ia(0.747,0.747)	& 0.747 	&   -0.0           \\
+			$\ccpbulb$  	& Center-plane Bulb Coefficient  	& ia(0.867,0.867) & 0.867 	&   -0.0           \\
+			$\cbbulb$  		& Bulb Block Coefficient  			& ia(0.491,0.491)	& 0.491 	&   -0.0           \\
+			$\cpbulb$  		& Bulb Prismatic Coefficient    	& ia(1.0,1.0) & 1.0 	&   0.0           \\
+			$\Cbb$  		& Breadth Ratio 					& ia(0.211,0.211) & 0.211 	&   -0.0           \\
+			$\Clpr$  		& Ship Length to bulb length ratio  & ia(0.038,0.038) & 0.038 	&   -0.0           \\
+			$\Czb$  		& Ship Draft to Bulb height Ratio  	& ia(0.339,0.339) & 0.339 	&   -0.0           \\
+			$\Cabt$  		& Midship to Mid bulb area ratio    & ia(0.039,0.039)	& 0.039 	&   -0.0           \\
+			$\Cabl$  		& Center-plane Ratio  				& ia(0.013,0.013)	& 0.013 	&   -0.0           \\
+			$\Cvpr$  		& Displacement Ratio   				& ia(0.002,0.002) & 0.002 	&   0.0           \\
+			$\beambulb$  	& Beam of Bulbous Bow 				& ia(5.921,5.921) & 5.921 	&   0.0           \\
+			$\draftbulb$  	& Draft of Bulbous Bow 				& ia(5.101,5.101) & 5.101 	&   0.0           \\
+			$\lwlbulb$  	& Length of Bulbous Bow 			& ia(4.434,4.434) & 4.434 	&   0.0           \\
+			\bottomrule
+		\end{tabular}
+		}
+		\caption{Hull Design Randomly Generated Hull Form parameters}
+		\label{tbl:1_logic2fpdcompare}
+	\end{table}
+\end{small}

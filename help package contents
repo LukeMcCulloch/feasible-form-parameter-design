@@ -1,0 +1,139 @@
+Help on package relational_lsplines:
+
+NAME
+    relational_lsplines - pip usage from shell: cd to the directory where this file is found
+
+FILE
+    /home/luke/Documents/computational_naval_architecture/projects/relational_hull_design/relational_lsplines/relational_lsplines/__init__.py
+
+DESCRIPTION
+    and type:
+        if brand new:
+            pip install . 
+        if updating:
+            pip install . --upgrage
+
+PACKAGE CONTENTS
+    ADILS
+    AD_FrenetSerret
+    Bspline_paver
+    BulbRules
+    BulbRules2
+    CAGD15__box_problem_5a_alphae75
+    CAGD15__box_problem_angledalphae75
+    ElementaryGeometry
+    FormParameter
+    GUIspline
+    GeometryGenerator
+    HierarchicalBspline
+    KV
+    OldHullDesigner
+    Quaternion
+    SAC_flats
+    SAC_flats_CAGD15
+    SAC_ini
+    SternRun_CAGD15
+    THB
+    THB_crux
+    TestRGP_1
+    adials_gui3d
+    adials_gui3d_ONECURVE
+    area
+    attractor
+    automatic_differentiation
+    box_problem
+    box_problem_angled
+    box_problem_angled_and_messedup
+    box_problem_wild
+    check_3d_fpd
+    curvature
+    curve
+    design_space
+    design_tree
+    eKanren
+    equality_paver
+    equality_paver2
+    equality_paver3
+    extended_interval_arithmetic
+    fairness
+    fpu
+    frames
+    function_constraint
+    gaussxw
+    graph_constructor
+    grapher
+    grapher_biarrow
+    helper
+    hull_from_designspace
+    hull_from_simple_designspace
+    hull_inference
+    hull_inference_nicer_syntax_v1
+    hull_inference_ob_graph
+    hull_inference_oop
+    hull_use_HICLP
+    iaBox
+    initialValues
+    interval_analysis
+    interval_arithmetic
+    kanren_utils
+    knot_operations
+    menu
+    meta0
+    meta1
+    meta2
+    minDistance
+    moments
+    mx_plots
+    mypythonscript
+    myspline
+    myspline_copy_and_go
+    nbspbasis
+    old_fuzzy_hullmaker
+    opt_hull
+    opt_simple_hull
+    ordered_equality_paver
+    panelCentroids
+    plots
+    plots3
+    plots4
+    plots_2
+    points
+    polyMaker
+    polyMaker_traditional_stern
+    poly_integration
+    quat1
+    representation
+    reverseAD
+    reverseAD_old
+    routines
+    scratch
+    simple_hull_rules
+    simple_paver
+    sliders
+    sobol
+    sqKanren
+    stern_profile_generator
+    tangent
+    test_RGP_add_one_rule
+    test_RGP_small
+    test_ad
+    test_design_space
+    test_hull_generation
+    test_iKanren
+    test_ia
+    test_idea
+    test_rs
+    thbasis
+    thbsurface
+    time_analysis
+    transformations
+    uKanren
+    utilities
+    utility_optimization
+    vertex
+    wavelet_matrices
+
+SUBMODULES
+    lp
+    spline
+
