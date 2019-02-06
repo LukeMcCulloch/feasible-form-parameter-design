@@ -116,9 +116,11 @@ All rights reserved
     *  Assuming dependencies are met (see below), go to the top level directory (where setup.py is found)
     and run
     > pip install .
+
     to install.
     *  Or
     > pip install . --upgrade
+    
     to update after making changes.
     *  import relational_lsplines to access the code.
 
