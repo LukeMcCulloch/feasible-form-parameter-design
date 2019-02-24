@@ -34,10 +34,10 @@ All rights reserved
     Data can flow forwards and backwards across a relation.  There may be more than one answer
     to a question.  In this case 'questions' are interval valued rules derived from naval architecture.
     A good bit of what we do here - that is, how the relational computing sytem works,
-    (and the names of functions developed in it's implementation)
+    (and the names of functions developed in it's implementation) 
     is informed by the sensibilities found in Kanren related langague research.
     But it is filtered through the lens of form parameter design, and especially something
-    called 'interval arithemetic' (and interval analysis, though the full power of intervals
+    called 'interval arithemetic' (and interval analysis, though the full power of intervals 
     hasn't made it into this version.  Not even close.)
 
     *  interval arithmetic:
@@ -133,6 +133,8 @@ All rights reserved
        But seriously, if there is something weird/hard to get required, I will do my best to take it out.  
        I am shooting for just requiring Numpy and Matplotlib.  Fancy graph plotting will be optional until it becomes dead simple to
        install.
+    *  One thing required in the present version:  intervals from the pyinterval package [here.](https://github.com/taschini/pyinterval) 
+       If you use pip, get with pip install pyinterval
 
 * Database configuration
 * How to run 'tests'  (how to make your cpu spin random numbers into something resembling a ship hull form)
