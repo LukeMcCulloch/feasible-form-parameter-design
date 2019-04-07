@@ -7,12 +7,20 @@
 """
 cd Documents/computational_naval_architecture/alt_implementation/
 """
+
+import relational_lsplines as rlspline 
+#from relational_lsplines import simple_hull_rules_language as srl
+
+#from relational_lsplines.simple_hull_rules_language import HullGeometryGenerator
+
+
 import numpy as np
 import unittest#2 as unittest
 import copy
-from ..time_analysis import Timer
-from interval_analysis import ia 
-from automatic_differentiation import ad
+from timer import Timer
+
+ia = rlspline.ia
+ad = rlspline.ad
 from AD import scalarAD 
 from AF import fuzzyNumber
 

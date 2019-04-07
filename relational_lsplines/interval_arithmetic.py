@@ -31,6 +31,10 @@ def df(a):
     return lambda: a #dff(a)
     
 class ia(object):
+    """
+    self.inf : infimum
+    self.sup : supremum
+    """
     infinity = 1.e25
     def __init__(self, inf, sup, has_mp=True, isempty = False, name='unknown_var'):
         self.inf                    = inf
@@ -40,8 +44,8 @@ class ia(object):
         self.infinity               = 1.e25
         self.name                   = name
         #try:
-        self.inf = fpu.down(df(self.inf))#
-        self.sup = fpu.up(df(self.sup))#
+        self.inf = fpu.down(df(self.inf))#  infimum
+        self.sup = fpu.up(df(self.sup))#    supremum
         #self.inf = float(mp.mpf(mp.iv.mpf(str(self.inf)).a))
         #self.sup = float(mp.mpf(mp.iv.mpf(str(self.sup)).b))
 #        except:
