@@ -160,16 +160,23 @@ All rights reserved
 
 
 ### Example Code ###
-Jupyter notebooks examples forthcoming; finger's crossed.
+Jupyter notebooks examples and other things...
 
-* Someday jupyter notebooks may be accesable here: ##[first_notebook.ipynb](https://nbviewer.jupyter.org/urls/https://TLMbot@bitbucket.org/TLMbot/relational_lsplines/relational_lsplines/first_notebook.ipynb)    
-* But this requires a public facing repo.  There's one reason to get this out there.
-* Instead, do the following:
+* Do the following:
     *  Go to source/Jupyter and run first_notebook.ipyb
     *  This is to help get started.  Eventually (of course) the idea is to "document and test everything."
 * If feeling adventurous, try the "quick_hull" notebook.  It actually "runs everything" (autonomously) and generates a
 full on ship hull form from random form parameters.  Unfortunately I still need to look up how to
 add interactivity to plots in a Jupyter notebook.  You should get 3D images of the hull at the end, (of 5 minutes or so of runtime) but you can not zoom in and rotate around to see what you've got!
+
+Pure Python external usage of the lib:
+* I'm making a new repo demoing the code here:
+https://github.com/LukeMcCulloch/Relational-Interval-Geometry.git
+
+Old stuff:
+
+* jupyter notebooks were be accesable here: ##[first_notebook.ipynb](https://nbviewer.jupyter.org/urls/https://TLMbot@bitbucket.org/TLMbot/relational_lsplines/relational_lsplines/first_notebook.ipynb)    
+* But this seems to always requires some shennanigans on bitbucket.  Not going to try to hard for this on github as it's not going to give any ROI as far as I can tell.
 
 
 ### Contribution guidelines ###
