@@ -112,9 +112,19 @@ class ad(object):
     TODO: document that this uses that idiom
     where a class instance's methods return
     instances of that class again.
+    
+    Note:  
+        of_scalars=True     : means you have a vector of real numbers
+        of_scalars=False    : means you have a vector of interval numbers
+        
+    N   = the total number of numbers in your design vector, or 
+            the number of interacting scalars in your automatic differentiation space
+            
+    dim = the position of 'this number' within the vector of N numbers
     """
     def __init__(self, value, grad=None, hess=None,
-                 name='unknown_var',of_scalars=False,
+                 name='unknown_var',
+                 of_scalars=False,
                  N=None, dim=None):
         self.value  = value
         self.name   = name ## TODO: can we introspect pythons variable names?
@@ -2064,3 +2074,6 @@ if __name__ == '__main__':
     print ''
     print g.hess
     
+    
+    x = ad(0., name='x', N=2, dim=0)
+    y = ad(0., name='x', N=2, dim=0)
