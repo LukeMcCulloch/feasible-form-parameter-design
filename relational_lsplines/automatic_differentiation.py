@@ -44,7 +44,7 @@ class adObjectMaker(object):
         ia_null = ia(0.,0.)
         if i>= 0:
             Im = np.identity((N),float)#np.matrix(np.identity((N),float))
-        elif i==-1:#interval contraint -> gradient is null
+        elif i==-1:#interval constraint -> gradient is null
             Im = np.zeros((N,N),float)
         GX=[]
         for j in range(N):
@@ -77,7 +77,8 @@ class adObjectMaker(object):
         """
         if i>= 0:
             Im = np.identity((N),float)#np.matrix(np.identity((N),float))
-        elif i==-1:#interval contraint -> gradient is null
+        elif i==-1:#interval constraint -> gradient is null
+            #assert this could be deprecated
             Im = np.zeros((N,N),float)
         GX=[]
         for j in range(N):
