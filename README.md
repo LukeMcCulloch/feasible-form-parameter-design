@@ -178,6 +178,20 @@ Old stuff:
 * jupyter notebooks were be accesable here: ##[first_notebook.ipynb](https://nbviewer.jupyter.org/urls/https://TLMbot@bitbucket.org/TLMbot/relational_lsplines/relational_lsplines/first_notebook.ipynb)    
 * But this seems to always requires some shennanigans on bitbucket.  Not going to try to hard for this on github as it's not going to give any ROI as far as I can tell.
 
+### Ridiculously complicated stuff, aka how to generate and see hull forms in Rhino:
+
+    * Run simple_hull_rules_language3.py
+    * At the end run ">>> SD.export('rhino')"
+    * Then run ">>> SD.export('designspace')" if you want to save the database
+    * Then run ComplexHull.py and it will send the geometry to Rhino compatible files 
+         by running this command: "ch.export_rhino_surfaces()"
+    * Next open Rhino, the B-spline CAD program and Atom, the hackable text editor for the 21st century, 
+        unlike these instructions.
+    * In Rhino type Cthe cmmand:  StartAtomEditorListener' in at the command input window
+    * Open InterfaceToRhino.py in Atom (and assuming Atom has installed the Rhinoscript plugin)'
+    * run the python file with: ctrl + alt + r'
+    * Then the geometry, especially surfaces, but also curves, should pop up in Rhino.
+    * That's my present workflow, as I've had no time to clean it up.
 
 ### Contribution guidelines ###
 

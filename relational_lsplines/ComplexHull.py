@@ -1924,4 +1924,5 @@ if __name__ == '''__main__''':
     
     #ch.make_lines() #no good
     
+    #send to Rhino
     ch.export_rhino_surfaces()

@@ -2703,9 +2703,10 @@ class Hull(object):
             # force convexity at the keel
             mssg = 'ISSUE: planar area of stern fairness is '+\
                     '> area constraint '+\
-                    'fix with a new rule!'
-            assert(area_ck>area),mssg
-            #if (area_ck>area):
+                    'fix with a new rule! {} > {}'.format(area_ck,area)
+            #assert(area_ck>area),mssg
+            if (area_ck>area):
+                print mssg
                 #for i in range(1,3):
                 #    loc = section.greville_abscissa(i)
                 #    FPD.add_CurvatureConstraint(kind='equality',
@@ -8720,9 +8721,24 @@ class Hull(object):
             and so we do not split the DWL,
             but instead just tack on the aft most transverse
         
+        
+            import curve as spline
+            from ADILS import interval_bounds
+            from FormParameter import FormParameterDict
+            from ADILS import Lagrangian
+            from ADILS import lagrangian_bounds
+            
+            from ADILS import IntervalLagrangeSpline
+            
+            from   adials_gui3d      import frame
+            
+            
             
             import curve             as     spline
             from hull_from_simple_designspace import linear_vertices
+            
+            from   initialValues     import interval_bounds, lagrangian_bounds
+            from   FormParameter     import FormParameterDict
         
             import utility_optimization as uopt
             from   adials_gui3d      import frame, DrawCurveInteractive, hull_frame
@@ -8819,7 +8835,7 @@ class Hull(object):
         vts = []
         for vert,v3 in zip(Lspline.curve.vertices,verts[:,2:]):
             lv = list(vert)
-            lv.append(v3)
+            lv.append(v3[0])
             vts.append(lv)
         self.DWL_aft = spline.Bspline(np.asarray(vts), k, nump)
         #

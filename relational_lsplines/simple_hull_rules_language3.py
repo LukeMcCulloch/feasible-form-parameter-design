@@ -2164,3 +2164,25 @@ if __name__ == "__main__":
                      facecolor = 'green', 
                      alpha=.1,
                      label='area')
+    
+    """
+    # to export:
+    SD.export('rhino')
+    SD.export('designspace')
+    
+    #then to get the cleaned up model to rhino,
+    
+    """
+    print 'to export the geometry, '
+    print ">>> SD.export('rhino')"
+    print ">>> SD.export('designspace')"
+    print "Then run ComplexHull.py and send to Rhino compatible files with"
+    print ">>> ch.export_rhino_surfaces()"
+    
+    print "Then Open Rhino and Atom"
+    
+    print 'Usage in Rhino:'
+    print 'type Command:  StartAtomEditorListener'
+    print 'Open this file in Atom (assuming Atom has installed the Rhinoscript plugin)'
+    print 'run with: ctrl + alt + r'
+    print 'Then the geometry, especially surfaces, but also curves, should pop up in Rhino.'

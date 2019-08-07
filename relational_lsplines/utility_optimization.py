@@ -1225,6 +1225,10 @@ def issue_longitudinals(tcurvenet,
         #                tvertnet[:,i], k, nump)
         #**************************************
         # simple 4 c.v. starting linear curve
+        print 'attempting to linear_vertices....!'
+        print 'tvertnet[:,i][0] = ',tvertnet[:,i][0]
+        print 'tvertnet[:,i][-1] = ',tvertnet[:,i][-1]
+        print 'and the absurd result is?:='
         lvts = linear_vertices(tvertnet[:,i][0],
                                tvertnet[:,i][-1],
                                4)
