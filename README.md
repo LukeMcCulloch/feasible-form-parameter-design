@@ -185,9 +185,9 @@ Old stuff:
     * Then run ">>> SD.export('designspace')" if you want to save the database
     * Then run ComplexHull.py and it will send the geometry to Rhino compatible files 
          by running this command: "ch.export_rhino_surfaces()"
-    * Next open Rhino, the B-spline CAD program and Atom, the hackable text editor for the 21st century, 
-        unlike these instructions.
-    * In Rhino type Cthe cmmand:  StartAtomEditorListener' in at the command input window
+    * Next open Rhino, the B-spline CAD program, and Atom, the hackable text editor for the 21st century, 
+        (unlike these instructions --- which are a serious mess)
+    * In Rhino type the cmmand:  StartAtomEditorListener' in at the command input window
     * Open InterfaceToRhino.py in Atom (and assuming Atom has installed the Rhinoscript plugin)'
     * run the python file with: ctrl + alt + r'
     * Then the geometry, especially surfaces, but also curves, should pop up in Rhino.
