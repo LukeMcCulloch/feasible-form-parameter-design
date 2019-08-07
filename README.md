@@ -191,7 +191,7 @@ Old stuff:
     * Open InterfaceToRhino.py in Atom (and assuming Atom has installed the Rhinoscript plugin)'
     * run the python file with: ctrl + alt + r'
     * Then the geometry, especially surfaces, but also curves, should pop up in Rhino.
-    * That's my present workflow, as I've had no time to clean it up.
+    * That's my present workflow.  Yes I know it could do with a bit of polishing.  One day!
 
 ### Contribution guidelines ###
 
