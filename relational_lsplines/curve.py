@@ -1558,6 +1558,24 @@ class Bspline(object):
             This method is integral over the curve
             and so returns one value for each M1,M2,M3
             for each curve
+            
+        Physically, 
+            basis function derivatives let 
+            you contruct derivatives of the 
+            curve (or higher dimenionsal analog)
+            as functions of precomputed basis 
+            derivatives
+            -derivatives of basis funtions 
+            are basis funtions of one less degree
+            -this makes for nice 
+            differentiation-by-projection
+            operators, concerning derivatives of 
+            functions represented on such 
+            spaces.
+            
+            This is very different in character from 
+            optimizing the design variables.
+            Do not get them confused!
         """
         ## change to pass pre-evaluated dNik
         curve.d1    = 1
