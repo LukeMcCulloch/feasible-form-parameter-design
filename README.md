@@ -178,7 +178,7 @@ Old stuff:
 * jupyter notebooks were be accesable here: ##[first_notebook.ipynb](https://nbviewer.jupyter.org/urls/https://TLMbot@bitbucket.org/TLMbot/relational_lsplines/relational_lsplines/first_notebook.ipynb)    
 * But this seems to always requires some shennanigans on bitbucket.  Not going to try to hard for this on github as it's not going to give any ROI as far as I can tell.
 
-### Overly complicated stuff, aka how to generate and see hull forms in Rhino using my workflow which has not been properly cleaned:
+### Overly complicated stuff, aka how to generate and see hull forms in Rhino using my workflow which has not been properly cleaned up:
 
     * Run simple_hull_rules_language3.py
     * At the end run ">>> SD.export('rhino')"
