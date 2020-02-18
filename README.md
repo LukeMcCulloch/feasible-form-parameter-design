@@ -107,6 +107,57 @@ All rights reserved
 
 * Version 0.1
 * [A website is under construction here](https://LukeMcCulloch.github.io)
+* [Also there is a repository with some more demo code](https://github.com/LukeMcCulloch/Relational-Interval-Geometry)
+
+# So... Why Relational-Interval-Geometry?
+There is neat stuff here.  For examples...
+
+# Neat stuff, on the declarative design front:
+1. They use declarative constraint programming to generate complex ship hull geometry from a design specification.
+2. Numerical constraints are parsed into expression trees and compiled into declarative relational constaints.
+3. A network of constraints is automatically built based on freely modified mathematical relations between design variables
+4. Interval arithmetic is used to process constraints on the entire design space at once
+5. An constraints become interval valued relations between design space parameters.
+6. Constraint propagation narrows the design space to the feasible domain based on the latest design choices.
+7. The solver is able to narrow the design space down to individual self-consistent design parameter vectors.
+8. This is what is needed to ensure that the nonlinear solver, mentioned just below, will be successfull in 
+solving for the nice looking geometry.
+
+# So a constraint on the length, width, and height of the hull form ensures that the hull will never exceed those bounds.
+## e.g. L*W*H <= 100.0, or what have you.  How does that work, under the hood?
+1. It will be processed into a syntax tree:
+![](fig/syntax_tree.png)
+2. Then compiled into declarative constriant language
+3. And constraint propagation over the interval valued design space will eliminate design subspaces which violate the constraint.
+4. In the end your ship hull satisfies this and more constraints which form a network
+![](fig/ConstraintGraphs.png/)
+5. And many more constraints bsides.  Finally there is a constraint conforming ship hull.
+![](fig/Cb_def.png)
+
+(This picture above is an actual result of the program, design generated from an input vector, randomly selected from portions of the design space deamed feasible by the constraint solver.  Another example is given below.)
+
+# Neat stuff, on the automatic differentiation, nonlinear shape optimization front:
+2. There is an automatic differentiation implementation of a nonlinear constraint solver based on Lagrange's method of multiplies.
+3. This is coupled with an AD variables representation of B-spline control points
+4. There is also a full B-spline library so that any quantity of a B-spline curve or surface can be automatically 
+differentiated.
+5. The code uses this to automatically generate the systems of equations needed for Lagrange multiplier based optimization.
+6. Once the solve is complete, the geometry meets the constraints exactly and is smooth according to some energy norms.
+7. TODO: insert pictures here!  (ship shapes)
+
+![](fig/FPD/cagd15curvedefBig.png)
+
+# Actual ship hulls look something like this:
+![](fig/TLMhull5_3.png)
+
+
+(This picture above is an actual result of the program, design generated from an input vector, randomly selected from portions of the design space deamed feasible by the constraint solver.  As you can see we are looking up at the ship hull from down below it.)
+
+# Neat stuff, on the multiresolution modeling portion:
+1. The solver above is nice, but we would also like to vary detail locally, without needlessly adding control points elsewhere.
+2. The code uses the truncated hierarchical basis splines to make this work.
+3. TODO: insert pictures here!  (the elegant THB basis, or maybe some local shape detail)
+
 
 ### How do I get set up? ###
 
