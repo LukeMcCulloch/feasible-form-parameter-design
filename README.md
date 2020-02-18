@@ -1,6 +1,9 @@
-# README #
+# Relational Lsplines:  Relational logic programming and form parameter design #
+![](fig/OSVMultiSurfColor.png)
 
-Relational Lsplines:  Relational logic programming and form parameter design
+
+## Relational Ship Hull Geometric Design Generation ##
+![](fig/Cb_def.png)
 
 Copyright 2019 Thomas Luke McCulloch
 
