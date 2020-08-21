@@ -12,7 +12,7 @@ from time_analysis import Timer
 #get rid of later:
 import inspect #http://stackoverflow.com/questions/2654113/python-how-to-get-the-callers-method-name-in-the-called-method
 
-from interval import interval as pyinterval
+#from interval import interval as pyinterval
 #pya = pyinterval([0.,1.])
 
 
