@@ -138,6 +138,7 @@ class ad(object):
         if N is not None:
             self.n = N
             assert(dim is not None)
+            self.dim = dim
             if of_scalars == False:
                 self.grad = adObjectMaker.makeGradient(N,dim)
                 self.hess = adObjectMaker.makeHessian(N)
@@ -282,7 +283,10 @@ class ad(object):
                      ((other**2)*other*self.hess)/other**4) 
                      
     def __rdiv__(self, other):
-        return self.__div__(other)
+        temp = ad(1.0, N=self.n, dim=self.dim)
+        temp2 = temp / self
+        return other * temp2
+        #return self.__div__(other)
         #return ad((other/self.value)  ,
         #             (-other*self.grad)/(other**2),
         #             (-(other**2)*other*self.hess)/other**4) 
@@ -2077,4 +2081,4 @@ if __name__ == '__main__':
     
     
     x = ad(0., name='x', N=2, dim=0)
-    y = ad(0., name='x', N=2, dim=0)
+    y = ad(0., name='x', N=2, dim=1)

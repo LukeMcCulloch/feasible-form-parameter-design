@@ -3633,11 +3633,13 @@ if __name__ == '__main__':
             self = Lspline
             vertices = [self.curve.xpts, self.curve.ypts]
             #self = Lspline
-            vertices = Lspline.optimize(vertices, stop = 35, Lagrangian = self.Lagrangian)
+            #vertices = Lspline.optimize(vertices, stop = 35, Lagrangian = self.Lagrangian)
+            Lspline.optimize(vertices, stop = 35, Lagrangian = self.Lagrangian)
             print Lspline.curve.area
-            #self.f      = self.compute_lagrangian(vertices, L)
-            #a,b = np.linalg.eig(self.f.hess)
+            self.f      = self.compute_lagrangian(vertices, L)
+            a,b = np.linalg.eig(self.f.hess)
             #vertices = Lspline.optimize(vertices)
+            Lspline.optimize(vertices)
             #self.adaptive_optimiztion(vertices)
             
 
